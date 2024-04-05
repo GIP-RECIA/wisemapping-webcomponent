@@ -1055,13 +1055,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@gip-recia/wisemapping-editor@npm:^0.6.1-recia-1.2.0":
-  version: 0.6.1-recia-1.2.0
-  resolution: "@gip-recia/wisemapping-editor@npm:0.6.1-recia-1.2.0"
+"@gip-recia/wisemapping-editor@npm:^0.6.1-recia-1.2.2":
+  version: 0.6.1-recia-1.2.2
+  resolution: "@gip-recia/wisemapping-editor@npm:0.6.1-recia-1.2.2"
   dependencies:
     "@emotion/react": "npm:^11.11.4"
     "@emotion/styled": "npm:^11.11.0"
-    "@gip-recia/wisemapping-mindplot": "npm:5.1.1-recia-1.0.1"
+    "@gip-recia/wisemapping-mindplot": "npm:5.1.1-recia-1.0.2"
     "@mui/icons-material": "npm:^5.15.12"
     "@mui/material": "npm:^5.15.12"
     emoji-picker-react: "npm:^4.8.0"
@@ -1072,13 +1072,13 @@ __metadata:
   peerDependencies:
     react: ^18.2.0
     react-dom: ^18.2.0
-  checksum: 10/3b79b2c4ebb8884287b7219bb589079eca684b72d7772bf5d9798ab40266d15df4546b9da054d51382be1e40ab56592f87b4a6c9fc0c6ea32044046bf9fc15a9
+  checksum: 10/8a9ca4bd238819a363d4b2ef03e34cf5e24d5509712598d391b04a495dfeaedcc83da67a8356b538345eb738d6d0203b637c4418efa5f38ec79c49bccbf51bf7
   languageName: node
   linkType: hard
 
-"@gip-recia/wisemapping-mindplot@npm:5.1.1-recia-1.0.1":
-  version: 5.1.1-recia-1.0.1
-  resolution: "@gip-recia/wisemapping-mindplot@npm:5.1.1-recia-1.0.1"
+"@gip-recia/wisemapping-mindplot@npm:5.1.1-recia-1.0.2":
+  version: 5.1.1-recia-1.0.2
+  resolution: "@gip-recia/wisemapping-mindplot@npm:5.1.1-recia-1.0.2"
   dependencies:
     "@gip-recia/wisemapping-core-js": "npm:0.6.0-recia-1.0.0"
     "@gip-recia/wisemapping-web2d": "npm:0.6.1-recia-1.0.0"
@@ -1087,7 +1087,7 @@ __metadata:
     jquery: "npm:3.7.1"
     lodash: "npm:^4.17.21"
     xml-formatter: "npm:^3.6.2"
-  checksum: 10/54768b337ab0a4a91f4de89904afc773949e7400ae1db540fe4428837e6a974f3f650c5cd7853889e475079ef8a60181ed7876cc5cd376a7e65c54c87b0a4867
+  checksum: 10/330fb177bf3fc85d0cc1dad173758fb451ee7654f276b55ba863e78136ff901e405b55fb9e01e87ad0846614064028dc79914ce5a76b28cecce25b30e845068d
   languageName: node
   linkType: hard
 
@@ -1110,7 +1110,7 @@ __metadata:
     "@fortawesome/fontawesome-svg-core": "npm:^6.5.1"
     "@fortawesome/free-solid-svg-icons": "npm:^6.5.1"
     "@fortawesome/react-fontawesome": "npm:^0.2.0"
-    "@gip-recia/wisemapping-editor": "npm:^0.6.1-recia-1.2.0"
+    "@gip-recia/wisemapping-editor": "npm:^0.6.1-recia-1.2.2"
     "@r2wc/react-to-web-component": "npm:^2.0.3"
     "@trivago/prettier-plugin-sort-imports": "npm:^4.3.0"
     "@types/lodash.throttle": "npm:^4"

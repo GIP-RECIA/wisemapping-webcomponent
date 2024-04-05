@@ -70,14 +70,16 @@ function App() {
       </div>
       <main>
         <div className="app-container">
-          {render && (
-            <WisemappingEditor
-              persistanceApiUrl={VITE_PERSISTANCE_API_URL}
-              fileId={VITE_FILE_ID}
-              userInfoApiUrl={VITE_USER_INFO_API_URI}
-              mode={mode}
-            />
-          )}
+          <div className="wisemapping__editor">
+            {render && (
+              <WisemappingEditor
+                persistanceApiUrl={VITE_PERSISTANCE_API_URL}
+                fileId={VITE_FILE_ID}
+                userInfoApiUrl={VITE_USER_INFO_API_URI}
+                mode={mode}
+              />
+            )}
+          </div>
         </div>
       </main>
     </>
