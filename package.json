@@ -82,7 +82,7 @@
     "regenerator-runtime": "^0.14.1",
     "sass": "^1.75.0",
     "standard-version": "^9.5.0",
-    "terser": "^5.30.3",
+    "terser": "^5.30.4",
     "typescript": "^5.4.5",
     "vite": "^5.2.10",
     "y-presence": "^0.2.3",
