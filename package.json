@@ -87,7 +87,7 @@
     "vite": "^5.2.10",
     "y-presence": "^0.2.3",
     "y-websocket": "^2.0.2",
-    "yjs": "^13.6.14"
+    "yjs": "^13.6.15"
   },
   "packageManager": "yarn@4.1.1"
 }
