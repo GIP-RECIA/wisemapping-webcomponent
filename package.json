@@ -86,7 +86,7 @@
     "typescript": "^5.4.5",
     "vite": "^5.2.10",
     "y-presence": "^0.2.3",
-    "y-websocket": "^2.0.2",
+    "y-websocket": "^2.0.3",
     "yjs": "^13.6.15"
   },
   "packageManager": "yarn@4.1.1"
