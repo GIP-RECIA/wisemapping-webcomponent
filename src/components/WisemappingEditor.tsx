@@ -3,7 +3,13 @@ import CustomPersistenceManager from '../services/CustomPersistenceManager';
 import { WisemappingEditorProps } from '../types/WisemappingEditorProps';
 import { findLanguage } from '../utils/i18nUtils';
 import { setUserInfoApiUrl } from '../utils/soffitUtils';
-import Editor, { Designer, EditorOptions, MapInfo, PersistenceManager, useEditor } from '@gip-recia/wisemapping-editor';
+import Editor, {
+  Designer,
+  EditorOptions,
+  MapInfo,
+  PersistenceManager,
+  useEditor,
+} from '@gip-recia/wisemapping-editor/dist/editor.js';
 
 export default function WisemappingEditor({
   persistanceApiUrl,
@@ -36,5 +42,5 @@ export default function WisemappingEditor({
     persistenceManager,
   });
 
-  return <Editor editor={editor} onLoad={initialization} />;
+  return <Editor config={editor} onLoad={initialization} onAction={() => {}} />;
 }

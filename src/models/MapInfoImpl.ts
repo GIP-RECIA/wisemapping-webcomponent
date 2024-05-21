@@ -1,29 +1,24 @@
-import { MapInfo } from '@gip-recia/wisemapping-editor';
+import { MapInfo } from '@gip-recia/wisemapping-editor/dist/editor.js';
 
 class MapInfoImpl implements MapInfo {
   private id: string;
   private title: string;
   private creatorFullName: string;
   private locked: boolean;
-  private starred: boolean;
   private lockedMsg: string | undefined;
+  private starred: boolean;
 
   constructor(id: string, title: string, creatorFullName: string, locked: boolean, lockedMsg?: string) {
     this.id = id;
     this.title = title;
+    this.creatorFullName = creatorFullName;
     this.locked = locked;
     this.lockedMsg = lockedMsg;
     this.starred = true;
-    this.creatorFullName = creatorFullName;
   }
 
   getId(): string {
     return this.id;
-  }
-
-  updateStarred(value: boolean): Promise<void> {
-    this.starred = value;
-    return Promise.resolve();
   }
 
   getTitle(): string {
@@ -42,12 +37,17 @@ class MapInfoImpl implements MapInfo {
     return this.locked;
   }
 
+  getLockedMessage(): string {
+    return this.lockedMsg ? this.lockedMsg : '';
+  }
+
   isStarred(): Promise<boolean> {
     return Promise.resolve(this.starred);
   }
 
-  getLockedMessage(): string {
-    return 'Map Is Locked !';
+  updateStarred(value: boolean): Promise<void> {
+    this.starred = value;
+    return Promise.resolve();
   }
 
   getZoom(): number {

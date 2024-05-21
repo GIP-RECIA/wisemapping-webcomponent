@@ -1,6 +1,6 @@
 import { instance as axios } from '../utils/axiosUtils.ts';
 import { $assert } from '@gip-recia/wisemapping-core-js';
-import { PersistenceError, PersistenceManager } from '@gip-recia/wisemapping-editor';
+import { PersistenceError, PersistenceManager } from '@gip-recia/wisemapping-editor/dist/editor.js';
 
 class CustomPersistenceManager extends PersistenceManager {
   private documentUrl: string;
