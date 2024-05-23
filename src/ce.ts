@@ -5,6 +5,7 @@ const WisemappingEditor = r2wc(WisemappingEditorSFC, {
   props: {
     persistanceApiUrl: 'string',
     fileId: 'string',
+    token: 'string',
     userInfoApiUrl: 'string',
     mode: 'string',
   },

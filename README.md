@@ -37,15 +37,16 @@ document.body.appendChild(wisemappingEditor);
 
 ## Paramètres
 
-| Nom                   |                                             Type                                              | Requis | Default | Description                       |
-| --------------------- | :-------------------------------------------------------------------------------------------: | :----: | :-----: | --------------------------------- |
-| `persistance-api-url` |                                           `string`                                            | `true` |         | URL du fichier (GET & PUT)        |
-| `file-id`             |                                           `string`                                            | `true` |         | Identifiant du fichier            |
-| `user-info-api-url`   |                                           `string`                                            | `true` |         | URL des informations utilisateurs |
-| `mode`                | `viewonly \| edition-owner \| edition-editor \| edition-viewer \| showcase \| edition-locked` | `true` |         | Mode de rendu de l'éditeur        |
+| Nom                   |                                             Type                                              |           Requis           | Default | Description                       |
+| --------------------- | :-------------------------------------------------------------------------------------------: | :------------------------: | :-----: | --------------------------------- |
+| `persistance-api-url` |                                           `string`                                            |           `true`           |         | URL du fichier (GET & PUT)        |
+| `file-id`             |                                           `string`                                            |           `true`           |         | Identifiant du fichier            |
+| `token`               |                                           `string`                                            | token ou user-info-api-url |         | Token utilisateur                 |
+| `user-info-api-url`   |                                           `string`                                            | token ou user-info-api-url |         | URL des informations utilisateurs |
+| `mode`                | `viewonly \| edition-owner \| edition-editor \| edition-viewer \| showcase \| edition-locked` |           `true`           |         | Mode de rendu de l'éditeur        |
 
 <br/>
 
 ```html
-<wisemapping-editor persistance-api-url="" file-id="" user-info-api-url="" mode="" />
+<wisemapping-editor persistance-api-url="" file-id="" token="" user-info-api-url="" mode="" />
 ```

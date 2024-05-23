@@ -15,6 +15,8 @@ function App() {
     'showcase',
     'edition-locked',
   ];
+  const [fileId, setFileId] = useState<string>(VITE_FILE_ID);
+  const [token, setToken] = useState<string>('Bearer');
   const [mode, setMode] = useState<EditorRenderMode>('edition-owner');
 
   const [leave, setLeave] = useState<boolean>(false);
@@ -41,10 +43,15 @@ function App() {
           </div>
           <div>
             <input type="checkbox" checked disabled />
-            fileId : {VITE_FILE_ID}
+            fileId : <input type="text" value={fileId} onChange={(e) => setFileId(e.target.value)} />
           </div>
           <div>
-            <input type="checkbox" checked disabled />
+            <input type="checkbox" checked={token.startsWith('Bearer ')} disabled />
+            token :{' '}
+            <input type="text" value={token} onChange={(e) => setToken(e.target.value)} style={{ width: '100%' }} />
+          </div>
+          <div>
+            <input type="checkbox" checked={!token.startsWith('Bearer ')} disabled />
             userInfoApiUrl : {VITE_USER_INFO_API_URI}
           </div>
           <div>
@@ -75,7 +82,8 @@ function App() {
             {render && (
               <WisemappingEditor
                 persistanceApiUrl={VITE_PERSISTANCE_API_URL}
-                fileId={VITE_FILE_ID}
+                fileId={fileId}
+                token={token.startsWith('Bearer ') ? token : undefined}
                 userInfoApiUrl={VITE_USER_INFO_API_URI}
                 mode={mode}
               />

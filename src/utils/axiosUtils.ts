@@ -1,4 +1,4 @@
-import { getToken } from './soffitUtils.ts';
+import { getJwt } from './soffitUtils.ts';
 import axios from 'axios';
 import throttle from 'lodash.throttle';
 
@@ -10,17 +10,21 @@ let token: string | undefined = undefined;
 let timeout: number | undefined = undefined;
 let renewToken: any;
 
+const setToken = (newToken: string): void => {
+  token = newToken;
+};
+
 const init = async () => {
   try {
     const {
       encoded,
       decoded: { exp, iat },
-    } = await getToken();
+    } = await getJwt();
     token = `Bearer ${encoded}`;
     timeout = (exp - iat) * 1000 * 0.75;
     renewToken = throttle(async () => {
       try {
-        const { encoded } = await getToken();
+        const { encoded } = await getJwt();
         token = `Bearer ${encoded}`;
       } catch (e) {
         // nothing to do
@@ -32,8 +36,8 @@ const init = async () => {
 };
 
 instance.interceptors.request.use(async (config) => {
-  if (timeout == undefined) await init();
-  else await renewToken();
+  if (!timeout && !token) await init();
+  else if (timeout) await renewToken();
   config.headers['Authorization'] = token;
 
   return config;
@@ -49,4 +53,4 @@ const errorHandler = (e: any): void => {
   }
 };
 
-export { instance, errorHandler };
+export { instance, setToken, errorHandler };
