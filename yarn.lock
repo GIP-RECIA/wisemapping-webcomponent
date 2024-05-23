@@ -1048,22 +1048,22 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@gip-recia/wisemapping-core-js@npm:6.0.0-recia-1.0.1605240":
-  version: 6.0.0-recia-1.0.1605240
-  resolution: "@gip-recia/wisemapping-core-js@npm:6.0.0-recia-1.0.1605240"
-  checksum: 10/0fff28cb4ab8c91612269f7091c7e6343ead916c360dbd587a2050a207436fbd880a2a8cfdb0dbc298133ac65f8390c0c60745ccdb718c38ac4ad2a630acaf00
+"@gip-recia/wisemapping-core-js@npm:6.0.0-recia-0.0.0":
+  version: 6.0.0-recia-0.0.0
+  resolution: "@gip-recia/wisemapping-core-js@npm:6.0.0-recia-0.0.0"
+  checksum: 10/d887615417b8ee0f20dc763bf8f9bf2e9d897ef2be4e0e929cda2423eb7ad424e0455024f4518e7f0bce56685404825ea7e31c3ecd5f740ba5a4f887e873a64d
   languageName: node
   linkType: hard
 
-"@gip-recia/wisemapping-editor@npm:6.0.0-recia-1.0.1605241":
-  version: 6.0.0-recia-1.0.1605241
-  resolution: "@gip-recia/wisemapping-editor@npm:6.0.0-recia-1.0.1605241"
+"@gip-recia/wisemapping-editor@npm:6.0.0-recia-1.0.2405231":
+  version: 6.0.0-recia-1.0.2405231
+  resolution: "@gip-recia/wisemapping-editor@npm:6.0.0-recia-1.0.2405231"
   dependencies:
     "@emotion/react": "npm:^11.11.4"
     "@emotion/styled": "npm:^11.11.5"
-    "@gip-recia/wisemapping-mindplot": "npm:6.0.0-recia-1.0.1605241"
-    "@mui/icons-material": "npm:^5.15.15"
-    "@mui/material": "npm:^5.15.15"
+    "@gip-recia/wisemapping-mindplot": "npm:6.0.0-recia-1.0.2405231"
+    "@mui/icons-material": "npm:^5.15.18"
+    "@mui/material": "npm:^5.15.18"
     emoji-picker-react: "npm:^4.9.2"
     react-color: "npm:^2.19.3"
     react-intl: "npm:^6.6.5"
@@ -1072,31 +1072,31 @@ __metadata:
   peerDependencies:
     react: ^18.2.0
     react-dom: ^18.2.0
-  checksum: 10/ab12ef6d586f4d4cb5974ea15187cd9769840acab2acf0f459dad61c03fb435abfe96e16822a6dde8b6619023df2ca9eccf743d276f8929ee9b7a2f80ae0224d
+  checksum: 10/4a43b8b990c3ceaae2ce243aa1bc2f5a4689a791326fc0d81c7b89da0528231520c4b05cb29dabd604fe3195e7185ab71d4d25cf79ebe099fc193a6604f74a7c
   languageName: node
   linkType: hard
 
-"@gip-recia/wisemapping-mindplot@npm:6.0.0-recia-1.0.1605241":
-  version: 6.0.0-recia-1.0.1605241
-  resolution: "@gip-recia/wisemapping-mindplot@npm:6.0.0-recia-1.0.1605241"
+"@gip-recia/wisemapping-mindplot@npm:6.0.0-recia-1.0.2405231":
+  version: 6.0.0-recia-1.0.2405231
+  resolution: "@gip-recia/wisemapping-mindplot@npm:6.0.0-recia-1.0.2405231"
   dependencies:
-    "@gip-recia/wisemapping-core-js": "npm:6.0.0-recia-1.0.1605240"
-    "@gip-recia/wisemapping-web2d": "npm:6.0.0-recia-1.0.1605240"
+    "@gip-recia/wisemapping-core-js": "npm:6.0.0-recia-0.0.0"
+    "@gip-recia/wisemapping-web2d": "npm:6.0.0-recia-0.0.0"
     "@types/jquery": "npm:^3.5.29"
     jquery: "npm:3.7.1"
     lodash: "npm:^4.17.21"
     xml-formatter: "npm:^3.6.2"
-  checksum: 10/ffe4b6c548a94f5514729eae6643d622d931634429b24225f4ed9398a1fc25175a063cb8bca33471e8d636bfb10079e2c6d847ecc441c1b58f0bed6fb5fd0df9
+  checksum: 10/73329fbb06e47c4b675bf25e299f37daff788f4bdc3266e54f103fe9309f72a1ebe14aec77556dc144b457fc66ec7fdf9bf98c31243aad248b1110e47459021d
   languageName: node
   linkType: hard
 
-"@gip-recia/wisemapping-web2d@npm:6.0.0-recia-1.0.1605240":
-  version: 6.0.0-recia-1.0.1605240
-  resolution: "@gip-recia/wisemapping-web2d@npm:6.0.0-recia-1.0.1605240"
+"@gip-recia/wisemapping-web2d@npm:6.0.0-recia-0.0.0":
+  version: 6.0.0-recia-0.0.0
+  resolution: "@gip-recia/wisemapping-web2d@npm:6.0.0-recia-0.0.0"
   peerDependencies:
-    "@gip-recia/wisemapping-core-js": 6.0.0-recia-1.0.1605240
+    "@gip-recia/wisemapping-core-js": 6.0.0-recia-0.0.0
     jquery: ^3.6.0
-  checksum: 10/90ae07a5cc5a8cb65f18676901bcba7985c84d379a50a9f05b414745d07f3c5e5ea8072bf6fe2d55e42345ac027fe4c61bc341f7395b993d4db5e7d8df6ae6e3
+  checksum: 10/b97a57f240e4a637c56caa1afdce136f9cc944f6147f72f90efb0c1919b3fbb021ff33786fc0458f34f64b7eb61a9de73cf380f660cdf8589c2ffdd3d7137407
   languageName: node
   linkType: hard
 
@@ -1109,7 +1109,7 @@ __metadata:
     "@fortawesome/fontawesome-svg-core": "npm:^6.5.2"
     "@fortawesome/free-solid-svg-icons": "npm:^6.5.2"
     "@fortawesome/react-fontawesome": "npm:^0.2.1"
-    "@gip-recia/wisemapping-editor": "npm:6.0.0-recia-1.0.1605241"
+    "@gip-recia/wisemapping-editor": "npm:6.0.0-recia-1.0.2405231"
     "@r2wc/react-to-web-component": "npm:^2.0.3"
     "@trivago/prettier-plugin-sort-imports": "npm:^4.3.0"
     "@types/lodash.throttle": "npm:^4"
@@ -1280,7 +1280,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@mui/icons-material@npm:^5.15.15":
+"@mui/icons-material@npm:^5.15.18":
   version: 5.15.18
   resolution: "@mui/icons-material@npm:5.15.18"
   dependencies:
@@ -1296,7 +1296,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@mui/material@npm:^5.15.15":
+"@mui/material@npm:^5.15.18":
   version: 5.15.18
   resolution: "@mui/material@npm:5.15.18"
   dependencies:
