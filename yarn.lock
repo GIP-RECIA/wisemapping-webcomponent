@@ -1789,9 +1789,9 @@ __metadata:
   linkType: hard
 
 "@types/regenerator-runtime@npm:^0":
-  version: 0.13.5
-  resolution: "@types/regenerator-runtime@npm:0.13.5"
-  checksum: 10/fe49a233185c1bb765dbc61ecfc6411890ba277855a6e0c4bfd4c48dab0141b81b0d5b9bb19fc06a64406990422078361684570ec43ee36a86fe05586ac6e4ee
+  version: 0.13.6
+  resolution: "@types/regenerator-runtime@npm:0.13.6"
+  checksum: 10/3e732c3a02a7b2479a5122e5861d8fcff6e862d188c5d50fa7f51681c7ab1631f212703400a74abd5c80e3f8e1c29ee6384711078418d5484eacb4baf3760f10
   languageName: node
   linkType: hard
 
