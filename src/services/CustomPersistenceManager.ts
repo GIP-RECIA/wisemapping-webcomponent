@@ -21,12 +21,12 @@ class CustomPersistenceManager extends PersistenceManager {
 
   async loadMapDom(mapId: string): Promise<Document> {
     const response = await axios.get(this.documentUrl.replace('{id}', mapId));
-    return new DOMParser().parseFromString(response.data.blob, 'text/xml');
+    return new DOMParser().parseFromString(response.data.data, 'text/xml');
   }
 
   async saveMapXml(mapId: string, mapXml: Document, pref?: string, saveHistory?: boolean, events?): Promise<void> {
     const body = {
-      blob: new XMLSerializer().serializeToString(mapXml),
+      data: new XMLSerializer().serializeToString(mapXml),
     };
 
     if (!this.onSave) {
